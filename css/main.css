@@ -271,6 +271,35 @@ Interactive
 /*
 Add the correct display in Chrome and Safari.
 */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  margin: 0;
+}
+
 summary {
   display: list-item;
 }
@@ -349,34 +378,8 @@ h3 {
   --btn-form: rgba(24, 140, 232, 1);
 }
 
-html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/*Хедер*/
-.phone {
-  text-align: center;
-}
-
-.nav-icons {
-  margin-right: 10px;
-  fill: currentColor;
+.header__line {
+  border-bottom: 1px solid var(--border-line);
 }
 
 .nav {
@@ -385,80 +388,28 @@ html {
   display: flex;
 }
 
-.site-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.main-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.nav .nav-link + .nav-link {
+.nav__link {
   margin-left: 50px;
 }
 
-.auth-nav {
+.header__site-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: auto;
 }
 
-.line {
-  border-bottom: 1px solid var(--border-line);
-}
-
-.auth-nav .nav-link + .nav-link {
-  margin-left: 50px;
-}
-
-.link.link-svg {
+.header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-link {
+.nav__item {
   position: relative;
   outline: none;
-}
-
-.link-current::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: var(--btn-blue);
-  border-radius: 2px;
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-}
-
-/*Иконки ссылок навигации*/
-/*Шрифты*/
-body {
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.714;
-  letter-spacing: 0.03em;
-  margin: 0;
 }
 
 .logo {
@@ -470,21 +421,48 @@ body {
   letter-spacing: 0.03em;
 }
 
-.logo .logo-blue {
+.logo__label--blue {
   color: var(--text-blue);
 }
 
-.logo .logo-white {
+.logo__label--white {
   color: var(--text-white);
 }
 
-.logo .logo-black {
+.logo__label--black {
   color: var(--text-black);
 }
 
-/*ссылки, кнопки/main*/
-.link,
-.link-current {
+.auth-nav__icons {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.auth-nav__svg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav__link--current::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--btn-blue);
+  border-radius: 2px;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+}
+
+.nav__link,
+.nav__link--current {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -497,14 +475,40 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link:hover,
-.link:focus,
-.link-current {
+.nav__link:hover,
+.nav__link:focus,
+.nav__link--current {
   color: var(--text-blue);
   outline: none;
 }
 
-.link-svg {
+.auth-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+}
+
+.auth-nav__link--first {
+  margin-right: 50px;
+}
+
+.auth-nav__link--first,
+.auth-nav__link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.auth-nav__svg {
   color: var(--text-gray);
 }
 
