@@ -1,23 +1,23 @@
 :root {/*Цвет текста*/
-    --text-blue: rgba(33, 150, 243, 1);
-    --text-black: rgba(0, 0, 0, 1);--text-dark-gray: rgba(33, 33, 33, 1);--text-gray: rgba(117, 117, 117, 1);--text-gray-op05: rgba(117, 117, 117, 0.5);
-    --text-white: rgba(255, 255, 255, 1);--text-white-op06: rgba(255, 255, 255, 0.6);
+  --text-blue: rgba(33, 150, 243, 1);
+  --text-black: rgba(0, 0, 0, 1);--text-dark-gray: rgba(33, 33, 33, 1);--text-gray: rgba(117, 117, 117, 1);--text-gray-op05: rgba(117, 117, 117, 0.5);
+  --text-white: rgba(255, 255, 255, 1);--text-white-op06: rgba(255, 255, 255, 0.6);
       
-    /*Цвет фона*/
-    --btn-blue: rgba(33, 150, 243, 1);
-    --btn-white: rgba(245, 244, 250, 1);--background: rgba(47, 48, 58, 1);--section-bcg: rgba(245, 244, 250, 1);--bcg-white: rgba(255, 255, 255, 1);--bcg-links: rgba(255, 255, 255, 0.1);--bcg-cards: rgba(47, 48, 58, 0.8);--bcg-img: rgba(33, 150, 243, 0.9);--overlay: rgba(0, 0, 0, 0.2);
+  /*Цвет фона*/
+  --btn-blue: rgba(33, 150, 243, 1);
+  --btn-white: rgba(245, 244, 250, 1);--background: rgba(47, 48, 58, 1);--section-bcg: rgba(245, 244, 250, 1);--bcg-white: rgba(255, 255, 255, 1);--bcg-links: rgba(255, 255, 255, 0.1);--bcg-cards: rgba(47, 48, 58, 0.8);--bcg-img: rgba(33, 150, 243, 0.9);--overlay: rgba(0, 0, 0, 0.2);
     
-    /*Портфолио|Сетка*/
-    --indent-card: 30px;--border-card: rgba(238, 238, 238, 1);--border-line: rgba(236, 236, 236, 1);
+  /*Портфолио|Сетка*/
+  --indent-card: 30px;--border-card: rgba(238, 238, 238, 1);--border-line: rgba(236, 236, 236, 1);
     
-    /*Главная|Сетки*/
-    --value-margin: 30px;
+  /*Главная|Сетки*/
+  --value-margin: 30px;
     
-    /*Клиенты*/
-    --border-logo: rgba(175, 177, 184, 1);
+  /*Клиенты*/
+  --border-logo: rgba(175, 177, 184, 1);
     
-    /*Модальное окно*/
-    --border-modal-close: rgba(0, 0, 0, 0.1);--border-input: rgba(33, 33, 33, 0.2);--border-input-footer: rgba(255, 255, 255, 0.3);--btn-form: rgba(24, 140, 232, 1);
+  /*Модальное окно*/
+  --border-modal-close: rgba(0, 0, 0, 0.1);--border-input: rgba(33, 33, 33, 0.2);--border-input-footer: rgba(255, 255, 255, 0.3);--btn-form: rgba(24, 140, 232, 1);
   
-  }
+}
     
