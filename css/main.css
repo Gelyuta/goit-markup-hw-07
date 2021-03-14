@@ -392,6 +392,11 @@ h3 {
   margin-left: 50px;
 }
 
+.nav__item {
+  position: relative;
+  outline: none;
+}
+
 .nav__link--current::after {
   content: "";
   display: block;
@@ -431,15 +436,10 @@ h3 {
           align-items: center;
 }
 
-.header__site-nav__nav {
+.header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.header__site-nav__nav__item {
-  position: relative;
-  outline: none;
 }
 
 .logo {
