@@ -3,148 +3,18 @@
 @import  'utils/variables';
 @import  'utils/mixins';
 @import  'components/header';
+@import  'components/hero';
+@import  'components/about-us';
 
 
-/*Герой*/
   
-.hero {
-  max-width: 1600px;
-  max-height: 600px;
-  text-align: center;
-  padding-top: 200px;
-}
-  
-.hero-bcg {
-  height: 600px;
-  max-width: 1600px;
-  margin: 0 auto;
-  background-color: var(--background);
-  background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-    url(../img/Img-hero.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-  
-.btn-hero {
-  display: inline-block;
-  border-radius: 4px;
-  padding: 10px 32px;
-  min-width: 200px;
-  min-height: 50px;
-  
-  color: var(--text-white);
-  background-color: var(--btn-blue);
-  border: none;
-  font-size: 16px;
-  letter-spacing: 0.06em;
-  font-weight: 700;
-  line-height: 1.875;
-    
-}
-  
-/*Заголовки секций*/
-  
-.hero .hero-title {
-  color: var(--text-white);
-  margin-top: 0;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.363;
-  letter-spacing: 0.06em;
-  margin-bottom: var(--value-margin);
-}
-  
-/*О нас*/
-  
-.about-svg {
-  padding: 20px 100px;
-  margin-bottom: 30px;
-  width: 270px;
-  height: 120px;
-  background-color: var(--section-bcg);
-    
-}
-  
-.section-about {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: calc(-1 * var(--value-margin));
-  
-  padding-top: 94px;
-}
-  
-.section-about > .about {
-  flex-basis: calc(100% / 4 - var(--value-margin));
-  margin-left: var(--value-margin);
-  display: inline-block;
-}
-  
-.section-img {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: calc(-1 * var(--value-margin));
-  padding-bottom: 94px;
-}
-  
-.section-img > .section-card {
-  flex-basis: calc(100% / 3 - var(--value-margin));
-  margin-left: 30px;
-}
-  
-.section-title {
-  color: var(--text-black);
-  padding-top: 94px;
-  margin-top: 0;
-  margin-bottom: 50px;
-  
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.166;
-  letter-spacing: 0.03em;
-  text-align: center;
-}
-  
+
+/*Команда*/
+
 .img-thumb {
   margin-bottom: 30px;
 }
-  
-.section .section-subtitle .footer-subtitle {
-  color: var(--text-dark-gray);
-  margin-bottom: 10px;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-}
-  
-.section .section-text {
-  color: var(--text-gray);
-  margin-top: 0;
-  margin-bottom: 0;
-}
-  
-.section-card {
-  position: relative;
-}
-  
-.card-title {
-  margin: 0;
-  text-align: center;
-  color: var(--text-white);
-  padding-top: 27px;
-  padding-bottom: 27px;
-  position: absolute;
-  bottom: 0;
-  background-color: var(--bcg-cards);
-  width: 100%;
-}
-  
-/*Команда*/
-  
+
 .profession {
   display: block;
 }
