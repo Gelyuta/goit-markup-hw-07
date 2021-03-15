@@ -657,7 +657,7 @@ h3 {
 }
 
 /*Команда*/
-.img-thumb {
+.section-team__img-thumb {
   margin-bottom: 30px;
 }
 
@@ -665,11 +665,11 @@ h3 {
   display: block;
 }
 
-.section-bcg {
+.section-team__bcg {
   background-color: var(--section-bcg);
 }
 
-.section-team {
+.section-team_card-set {
   margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -678,9 +678,10 @@ h3 {
       flex-wrap: wrap;
   padding-bottom: 94px;
   margin-left: calc(-1 * var(--indent-card));
+  outline: solid tomato;
 }
 
-.section-team > .section-cards {
+.section-team_card-set > .section-team__card {
   -ms-flex-preferred-size: calc(100% / 4 - var(--indent-card));
       flex-basis: calc(100% / 4 - var(--indent-card));
   margin-left: var(--indent-card);
@@ -690,7 +691,7 @@ h3 {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team {
+.section-team_member {
   color: var(--text-black);
   margin-top: 0;
   margin-bottom: 10px;
@@ -700,7 +701,7 @@ h3 {
   letter-spacing: 0.03em;
 }
 
-.profession {
+.section-team_profession {
   color: var(--text-gray);
   margin-top: 0;
   margin-bottom: 16px;
@@ -710,7 +711,7 @@ h3 {
   letter-spacing: 0.03em;
 }
 
-.card-content {
+.section-team__card-content {
   text-align: center;
   padding-left: 32px;
   padding-right: 32px;
@@ -765,7 +766,7 @@ h3 {
 }
 
 /*Клиенты*/
-.section-clients .section-title {
+.section-clients {
   padding-top: 65px;
 }
 
