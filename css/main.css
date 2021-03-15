@@ -392,7 +392,6 @@ h3 {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  margin-left: 50px;
   color: var(--text-dark-gray);
   font-weight: 500;
   font-size: 14px;
@@ -407,26 +406,12 @@ h3 {
   outline: none;
 }
 
+.nav__item:not(:first-child) {
+  margin-left: 50px;
+}
+
 .nav__item {
   position: relative;
-  outline: none;
-}
-
-.nav__link--current {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  color: var(--text-dark-gray);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.142;
-  letter-spacing: 0.02em;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.nav__link--current:hover, .nav__link--current:focus {
-  color: var(--text-blue);
   outline: none;
 }
 
