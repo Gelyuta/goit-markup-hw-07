@@ -271,6 +271,40 @@ Interactive
 /*
 Add the correct display in Chrome and Safari.
 */
+:root {
+  /*Цвет текста*/
+  --text-blue: rgba(33, 150, 243, 1);
+  --text-black: rgba(0, 0, 0, 1);
+  --text-dark-gray: rgba(33, 33, 33, 1);
+  --text-gray: rgba(117, 117, 117, 1);
+  --text-gray-op05: rgba(117, 117, 117, 0.5);
+  --text-white: rgba(255, 255, 255, 1);
+  --text-white-op06: rgba(255, 255, 255, 0.6);
+  /*Цвет фона*/
+  --btn-blue: rgba(33, 150, 243, 1);
+  --btn-white: rgba(245, 244, 250, 1);
+  --background: rgba(47, 48, 58, 1);
+  --section-bcg: rgba(245, 244, 250, 1);
+  --bcg-white: rgba(255, 255, 255, 1);
+  --bcg-links: rgba(255, 255, 255, 0.1);
+  --bcg-cards: rgba(47, 48, 58, 0.8);
+  --bcg-img: rgba(33, 150, 243, 0.9);
+  --overlay: rgba(0, 0, 0, 0.2);
+  /*Портфолио|Сетка*/
+  --indent-card: 30px;
+  --border-card: rgba(238, 238, 238, 1);
+  --border-line: rgba(236, 236, 236, 1);
+  /*Главная|Сетки*/
+  --value-margin: 30px;
+  /*Клиенты*/
+  --border-logo: rgba(175, 177, 184, 1);
+  /*Модальное окно*/
+  --border-modal-close: rgba(0, 0, 0, 0.1);
+  --border-input: rgba(33, 33, 33, 0.2);
+  --border-input-footer: rgba(255, 255, 255, 0.3);
+  --btn-form: rgba(24, 140, 232, 1);
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -342,40 +376,6 @@ h3 {
   display: block;
   margin-top: 0;
   margin-bottom: 10px;
-}
-
-:root {
-  /*Цвет текста*/
-  --text-blue: rgba(33, 150, 243, 1);
-  --text-black: rgba(0, 0, 0, 1);
-  --text-dark-gray: rgba(33, 33, 33, 1);
-  --text-gray: rgba(117, 117, 117, 1);
-  --text-gray-op05: rgba(117, 117, 117, 0.5);
-  --text-white: rgba(255, 255, 255, 1);
-  --text-white-op06: rgba(255, 255, 255, 0.6);
-  /*Цвет фона*/
-  --btn-blue: rgba(33, 150, 243, 1);
-  --btn-white: rgba(245, 244, 250, 1);
-  --background: rgba(47, 48, 58, 1);
-  --section-bcg: rgba(245, 244, 250, 1);
-  --bcg-white: rgba(255, 255, 255, 1);
-  --bcg-links: rgba(255, 255, 255, 0.1);
-  --bcg-cards: rgba(47, 48, 58, 0.8);
-  --bcg-img: rgba(33, 150, 243, 0.9);
-  --overlay: rgba(0, 0, 0, 0.2);
-  /*Портфолио|Сетка*/
-  --indent-card: 30px;
-  --border-card: rgba(238, 238, 238, 1);
-  --border-line: rgba(236, 236, 236, 1);
-  /*Главная|Сетки*/
-  --value-margin: 30px;
-  /*Клиенты*/
-  --border-logo: rgba(175, 177, 184, 1);
-  /*Модальное окно*/
-  --border-modal-close: rgba(0, 0, 0, 0.1);
-  --border-input: rgba(33, 33, 33, 0.2);
-  --border-input-footer: rgba(255, 255, 255, 0.3);
-  --btn-form: rgba(24, 140, 232, 1);
 }
 
 .header__line {
@@ -656,19 +656,6 @@ h3 {
   width: 100%;
 }
 
-/*Команда*/
-.section-team__img-thumb {
-  margin-bottom: 30px;
-}
-
-.profession {
-  display: block;
-}
-
-.section-team__bcg {
-  background-color: var(--section-bcg);
-}
-
 .section-team_card-set {
   margin: 0;
   display: -webkit-box;
@@ -678,17 +665,20 @@ h3 {
       flex-wrap: wrap;
   padding-bottom: 94px;
   margin-left: calc(-1 * var(--indent-card));
-  outline: solid tomato;
 }
 
-.section-team_card-set > .section-team__card {
-  -ms-flex-preferred-size: calc(100% / 4 - var(--indent-card));
-      flex-basis: calc(100% / 4 - var(--indent-card));
-  margin-left: var(--indent-card);
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  background: var(--bcg-white);
-  border-radius: 0px 0px 4px 4px;
+.section-team__bcg {
+  background-color: var(--section-bcg);
+}
+
+.section-team__img-thumb {
+  margin-bottom: 30px;
+}
+
+.section-team__card-content {
+  text-align: center;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .section-team_member {
@@ -702,6 +692,7 @@ h3 {
 }
 
 .section-team_profession {
+  display: block;
   color: var(--text-gray);
   margin-top: 0;
   margin-bottom: 16px;
@@ -711,13 +702,17 @@ h3 {
   letter-spacing: 0.03em;
 }
 
-.section-team__card-content {
-  text-align: center;
-  padding-left: 32px;
-  padding-right: 32px;
+.section-team__card {
+  -ms-flex-preferred-size: calc(100% / 4 - var(--indent-card));
+      flex-basis: calc(100% / 4 - var(--indent-card));
+  margin-left: var(--indent-card);
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  background: var(--bcg-white);
+  border-radius: 0px 0px 4px 4px;
 }
 
-.social-networks {
+.social-networks__list {
   padding-bottom: 30px;
   margin: auto;
   list-style: none;
@@ -726,12 +721,12 @@ h3 {
   display: flex;
 }
 
-.social-links {
+.social-networks__items {
   display: block;
   margin: auto;
 }
 
-.social-contacts {
+.social-networks__contacts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -745,23 +740,21 @@ h3 {
   height: 44px;
   color: var(--border-logo);
   outline: none;
-  -webkit-transition: bacground-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: bacground-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-contacts:hover,
-.social-contacts:focus {
+.social-networks__contacts:hover, .social-networks__contacts:focus {
   background-color: var(--btn-blue);
   color: var(--text-white);
   border-radius: 50%;
 }
 
-.icon-svg {
+.social-networks__icon {
   fill: currentColor;
 }
 
-.icon-svg:hover,
-.icon-svg:focus {
+.social-networks__icon:hover, .social-networks__icon:focus {
   fill: var(--text-white);
 }
 
