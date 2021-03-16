@@ -15,8 +15,9 @@
   @include logo;
 }
 
-.footer-logo .logo {
+.logo--footer & {
   padding-bottom: 20px;
+  outline: solid white;
 }
 
 .footer-title {
