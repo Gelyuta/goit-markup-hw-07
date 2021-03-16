@@ -8,8 +8,12 @@
 @import  'components/team';
 @import  'components/clients';
 
-  
+.visually-hidden{
+  @include title();
+}
+
 .buttons {
+
   text-align: center;
   padding-top: 94px;
   margin-bottom: 50px;
