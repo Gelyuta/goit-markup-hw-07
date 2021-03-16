@@ -968,6 +968,32 @@ h3 {
 }
 
 /*Подвал*/
+.footer {
+  background-color: var(--background);
+}
+
+.footer__contacts {
+  display: inline-block;
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.192;
+  margin-right: 93px;
+  letter-spacing: 0.03em;
+}
+
 .logo--footer .logo {
   padding-bottom: 20px;
   outline: solid white;
@@ -984,23 +1010,15 @@ h3 {
   color: var(--text-white);
 }
 
-.footer {
-  background-color: var(--background);
-}
-
-.footer-contacts {
-  display: inline-block;
-}
-
 .footer-logo {
   padding-bottom: 20px;
 }
 
-.address .address-link {
+.footer-address .footer-address__link {
   color: var(--text-white-op06);
 }
 
-.address .address-text {
+.footer-address .footer-address__text {
   color: var(--text-white);
 }
 
@@ -1050,15 +1068,6 @@ h3 {
 
 .footer-card {
   fill: var(--text-white);
-}
-
-.footer-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
 }
 
 .footer-svg .f-link + .f-link {

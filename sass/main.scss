@@ -10,14 +10,26 @@
 @import  'components/portfolio';
 
 /*Подвал*/
-
-.logo {
-  @include logo;
+.footer {
+  background-color: var(--background);
+}
+  
+.footer__contacts {
+  display: inline-block;
 }
 
-.logo--footer & {
-  padding-bottom: 20px;
-  outline: solid white;
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+  
+.logo {
+  @include logo;
+
+  .logo--footer & {
+    padding-bottom: 20px;
+    outline: solid white;
+  }
 }
 
 .footer-title {
@@ -28,25 +40,18 @@
   line-height: 1.142;
   letter-spacing: 0.03em;
   margin-bottom: 20px;
-  color: var(--text-white);}
+  color: var(--text-white);
+}
 
-.footer {
-  background-color: var(--background);
-}
-  
-.footer-contacts {
-  display: inline-block;
-}
-  
 .footer-logo {
   padding-bottom: 20px;
 }
   
-.address .address-link {
+.footer-address .footer-address__link {
   color: var(--text-white-op06);
 }
   
-.address .address-text {
+.footer-address .footer-address__text {
   color: var(--text-white);
 }
   
@@ -89,10 +94,7 @@
   fill: var(--text-white);
 }
   
-.footer-container {
-  display: flex;
-  align-items: baseline;
-}
+
   
 .footer-svg .f-link + .f-link {
   margin-left: 10px;
