@@ -918,8 +918,8 @@ h3 {
   opacity: 1;
 }
 
-.projects__link:hover .description,
-.projects__link:focus .description {
+.projects__link:hover .projects__description,
+.projects__link:focus .projects__description {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
@@ -929,7 +929,7 @@ h3 {
   overflow: hidden;
 }
 
-.description {
+.projects__description {
   width: 100%;
   height: 100%;
   background-color: var(--bcg-img);
@@ -948,7 +948,7 @@ h3 {
   /* opacity: 0; */
 }
 
-.description:hover {
+.projects__description:hover {
   opacity: 1;
 }
 
