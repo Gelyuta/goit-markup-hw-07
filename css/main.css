@@ -568,6 +568,7 @@ h3 {
   margin-bottom: var(--value-margin);
 }
 
+/*Список преимуществ*/
 .section-list__svg {
   padding: 20px 100px;
   margin-bottom: 30px;
@@ -593,6 +594,7 @@ h3 {
   display: inline-block;
 }
 
+/*Список карточек (Чем мы занимаемся")*/
 .card-set {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -708,6 +710,7 @@ h3 {
   border-radius: 0px 0px 4px 4px;
 }
 
+/*Список социальных сетей*/
 .social-networks__list {
   padding-bottom: 30px;
   margin: auto;
@@ -816,6 +819,7 @@ h3 {
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+/*Заголовок*/
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -830,6 +834,7 @@ h3 {
   overflow: hidden;
 }
 
+/*Кнопки*/
 .buttons {
   text-align: center;
   padding-top: 94px;
@@ -840,7 +845,7 @@ h3 {
   letter-spacing: 0.03em;
 }
 
-.buttons .btn-text {
+.buttons__text {
   color: var(--text-dark-gray);
   border: none;
   background: none;
@@ -853,7 +858,15 @@ h3 {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), bacground-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.buttons .item {
+.buttons__text:hover, .buttons__text:focus {
+  cursor: pointer;
+  color: var(--text-white);
+  background-color: var(--btn-blue);
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.buttons__item {
   text-decoration: none;
   color: var(--text-white);
   background-color: var(--border-card);
@@ -862,19 +875,11 @@ h3 {
   border-radius: 4px;
 }
 
-.buttons .item + .item {
+.buttons__item:not(:first-child) {
   margin-left: 8px;
 }
 
-.btn-text:hover,
-.btn-text:focus {
-  cursor: pointer;
-  color: var(--text-white);
-  background-color: var(--btn-blue);
-  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
+/*Проекты*/
 .projects {
   padding-bottom: 94px;
   margin: 0;

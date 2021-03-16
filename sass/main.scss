@@ -8,12 +8,13 @@
 @import  'components/team';
 @import  'components/clients';
 
+/*Заголовок*/
 .visually-hidden{
-  @include title();
+  @include visually-hidden();
 }
 
+/*Кнопки*/
 .buttons {
-
   text-align: center;
   padding-top: 94px;
   margin-bottom: 50px;
@@ -23,7 +24,7 @@
   letter-spacing: 0.03em;
 }
   
-.buttons .btn-text {
+.buttons__text {
   color: var(--text-dark-gray);
   border: none;
   background: none;
@@ -31,12 +32,20 @@
   padding: 6px 22px;
   border-radius: 4px;
   
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), bacground-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1)
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), bacground-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
+    
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    color: var(--text-white);
+    background-color: var(--btn-blue);
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
 }
   
-  
-.buttons .item {
+.buttons__item {
   text-decoration: none;
   color: var(--text-white);
   background-color: var(--border-card);
@@ -44,23 +53,13 @@
   display: inline-block;
   
   border-radius: 4px;
-  
-   
-}
-  
-.buttons .item + .item {
-  margin-left: 8px;
-}
-  
-.btn-text:hover,
-.btn-text:focus {
-  cursor: pointer;
-  color: var(--text-white);
-  background-color: var(--btn-blue);
 
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  &:not(:first-child) {
+    margin-left: 8px;
+  } 
 }
-  
+
+/*Проекты*/
 .projects {
   padding-bottom: 94px;
   margin: 0;

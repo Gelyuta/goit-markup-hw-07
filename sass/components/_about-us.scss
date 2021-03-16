@@ -1,3 +1,4 @@
+/*Список преимуществ*/
 .section-list__svg {
   padding: 20px 100px;
   margin-bottom: 30px;
@@ -19,7 +20,9 @@
   margin-left: var(--value-margin);
   display: inline-block;
 }
-    
+
+/*Список карточек (Чем мы занимаемся")*/
+
 .card-set {
   display: flex;
   flex-wrap: wrap;
