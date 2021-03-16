@@ -272,7 +272,6 @@ Interactive
 Add the correct display in Chrome and Safari.
 */
 :root {
-  /*Цвет текста*/
   --text-blue: rgba(33, 150, 243, 1);
   --text-black: rgba(0, 0, 0, 1);
   --text-dark-gray: rgba(33, 33, 33, 1);
@@ -280,7 +279,6 @@ Add the correct display in Chrome and Safari.
   --text-gray-op05: rgba(117, 117, 117, 0.5);
   --text-white: rgba(255, 255, 255, 1);
   --text-white-op06: rgba(255, 255, 255, 0.6);
-  /*Цвет фона*/
   --btn-blue: rgba(33, 150, 243, 1);
   --btn-white: rgba(245, 244, 250, 1);
   --background: rgba(47, 48, 58, 1);
@@ -290,15 +288,11 @@ Add the correct display in Chrome and Safari.
   --bcg-cards: rgba(47, 48, 58, 0.8);
   --bcg-img: rgba(33, 150, 243, 0.9);
   --overlay: rgba(0, 0, 0, 0.2);
-  /*Портфолио|Сетка*/
   --indent-card: 30px;
   --border-card: rgba(238, 238, 238, 1);
   --border-line: rgba(236, 236, 236, 1);
-  /*Главная|Сетки*/
   --value-margin: 30px;
-  /*Клиенты*/
   --border-logo: rgba(175, 177, 184, 1);
-  /*Модальное окно*/
   --border-modal-close: rgba(0, 0, 0, 0.1);
   --border-input: rgba(33, 33, 33, 0.2);
   --border-input-footer: rgba(255, 255, 255, 0.3);
@@ -592,7 +586,7 @@ h3 {
   padding-top: 94px;
 }
 
-.section-list > .section-list__item {
+.section-list__item {
   -ms-flex-preferred-size: calc(100% / 4 - var(--value-margin));
       flex-basis: calc(100% / 4 - var(--value-margin));
   margin-left: var(--value-margin);
@@ -617,9 +611,9 @@ h3 {
 
 .section-title {
   color: var(--text-black);
-  padding-top: 94px;
   margin-top: 0;
   margin-bottom: 50px;
+  padding-top: 94px;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.166;
@@ -760,8 +754,16 @@ h3 {
   fill: var(--text-white);
 }
 
-.section-title {
+.section-title__clients {
   padding-top: 0;
+  color: var(--text-black);
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.166;
+  letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .section__clients {
@@ -814,21 +816,6 @@ h3 {
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-/*Скрытый элемент*/
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .buttons {
   text-align: center;
   padding-top: 94px;
@@ -867,9 +854,9 @@ h3 {
 
 .btn-text:hover,
 .btn-text:focus {
+  cursor: pointer;
   color: var(--text-white);
   background-color: var(--btn-blue);
-  cursor: pointer;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }

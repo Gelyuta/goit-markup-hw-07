@@ -14,7 +14,7 @@
   padding-top: 94px;
 }
     
-.section-list > .section-list__item {
+.section-list__item {
   flex-basis: calc(100% / 4 - var(--value-margin));
   margin-left: var(--value-margin);
   display: inline-block;
@@ -34,10 +34,9 @@
     
 .section-title {
   color: var(--text-black);
-  padding-top: 94px;
   margin-top: 0;
   margin-bottom: 50px;
-    
+  padding-top: 94px; 
   font-weight: bold;
   font-size: 36px;
   line-height: 1.166;
