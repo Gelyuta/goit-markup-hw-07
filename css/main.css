@@ -956,7 +956,7 @@ h3 {
   padding: 20px 24px;
 }
 
-.projects .projects-title {
+.projects .card-text__title {
   color: var(--text-dark-gray);
   margin-top: 0;
   margin-bottom: 4px;
@@ -965,7 +965,7 @@ h3 {
   line-height: 36px;
 }
 
-.projects .projects-text {
+.projects .card-text__label {
   font-weight: normal;
   font-size: 16px;
   line-height: 30px;
