@@ -967,7 +967,6 @@ h3 {
   color: var(--text-gray);
 }
 
-/*Подвал*/
 .footer {
   background-color: var(--background);
 }
@@ -1069,17 +1068,17 @@ h3 {
   margin-left: 10px;
 }
 
-.footer-form-group {
+.footer__form-group {
   margin-left: 93px;
 }
 
-.footer-form {
+.footer__form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.footer-input {
+.footer__input {
   width: 358px;
   height: 50px;
   margin-right: 12px;
@@ -1095,7 +1094,7 @@ h3 {
   color: var(--text-gray);
 }
 
-.footer-button {
+.footer__button {
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1119,7 +1118,7 @@ h3 {
   cursor: grab;
 }
 
-.btn-svg {
+.footer-btn__svg {
   display: block;
   margin-top: 13px;
   margin-bottom: 13px;
