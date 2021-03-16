@@ -924,7 +924,7 @@ h3 {
           transform: translateY(0);
 }
 
-.card-thumb {
+.projects__card-thumb {
   position: relative;
   overflow: hidden;
 }
