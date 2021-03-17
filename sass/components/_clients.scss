@@ -1,6 +1,6 @@
 .section-title__clients{
   padding-top: 0;
-  color: var(--text-black);
+  color: $text-black;
   margin-top: 0;
   margin-bottom: 50px; 
   font-weight: bold;
@@ -33,8 +33,8 @@
   width: 170px;
   height: 90px;
   box-sizing: border-box;
-  fill: var(--border-logo);
-  border: solid 1px var(--border-logo);
+  fill: $border-logo;
+  border: solid 1px $border-logo;
   border-radius: 4px;
   outline: none;
   cursor: grab;
@@ -43,8 +43,8 @@
      
   &:hover,
   &:focus {
-    fill: var(--btn-blue);
-    border: solid 1px var(--btn-blue);
+    fill: $btn-blue;
+    border: solid 1px $btn-blue;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }

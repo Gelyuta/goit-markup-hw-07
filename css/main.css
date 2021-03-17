@@ -345,7 +345,7 @@ h3 {
 }
 
 .header__line {
-  border-bottom: 1px solid var(--border-line);
+  border-bottom: 1px solid #ececec;
 }
 
 .nav {
@@ -358,7 +358,7 @@ h3 {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  color: var(--text-dark-gray);
+  color: #212121;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.142;
@@ -368,7 +368,7 @@ h3 {
 }
 
 .nav__link:hover, .nav__link:focus {
-  color: var(--text-blue);
+  color: #2196f3;
   outline: none;
 }
 
@@ -386,7 +386,7 @@ h3 {
   display: block;
   width: 100%;
   height: 4px;
-  background-color: var(--btn-blue);
+  background-color: #2196f3;
   border-radius: 2px;
   position: absolute;
   left: 0;
@@ -423,15 +423,15 @@ h3 {
 }
 
 .logo__label--blue {
-  color: var(--text-blue);
+  color: #2196f3;
 }
 
 .logo__label--white {
-  color: var(--text-white);
+  color: white;
 }
 
 .logo__label--black {
-  color: var(--text-black);
+  color: black;
 }
 
 .auth-nav {
@@ -456,7 +456,7 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: var(--text-gray);
+  color: #757575;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -474,7 +474,7 @@ h3 {
 }
 
 .auth-nav__link--first--first:hover, .auth-nav__link--first:focus {
-  color: var(--text-blue);
+  color: #2196f3;
   outline: none;
 }
 
@@ -490,7 +490,7 @@ h3 {
 }
 
 .auth-nav__link:hover, .auth-nav__link:focus {
-  color: var(--text-blue);
+  color: #2196f3;
   outline: none;
 }
 
@@ -546,7 +546,7 @@ h3 {
   margin-bottom: 30px;
   width: 270px;
   height: 120px;
-  background-color: var(--section-bcg);
+  background-color: #f5f4fa;
 }
 
 .section-list {
@@ -562,7 +562,7 @@ h3 {
 .section-list__item {
   -ms-flex-preferred-size: calc(100% / 4 - 30px);
       flex-basis: calc(100% / 4 - 30px);
-  margin-left: var(--value-margin);
+  margin-left: 30px;
   display: inline-block;
 }
 
@@ -584,7 +584,7 @@ h3 {
 }
 
 .section-title {
-  color: var(--text-black);
+  color: black;
   margin-top: 0;
   margin-bottom: 50px;
   padding-top: 94px;
@@ -596,7 +596,7 @@ h3 {
 }
 
 .section-list__subtitle {
-  color: var(--text-dark-gray);
+  color: #212121;
   margin-bottom: 10px;
   font-weight: bold;
   font-size: 14px;
@@ -605,7 +605,7 @@ h3 {
 }
 
 .section-list__description {
-  color: var(--text-gray);
+  color: #757575;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -617,12 +617,12 @@ h3 {
 .card-set__title {
   margin: 0;
   text-align: center;
-  color: var(--text-white);
+  color: white;
   padding-top: 27px;
   padding-bottom: 27px;
   position: absolute;
   bottom: 0;
-  background-color: var(--bcg-cards);
+  background-color: rgba(47, 48, 58, 0.8);
   width: 100%;
 }
 
@@ -731,7 +731,7 @@ h3 {
 
 .section-title__clients {
   padding-top: 0;
-  color: var(--text-black);
+  color: black;
   margin-top: 0;
   margin-bottom: 50px;
   font-weight: bold;
@@ -772,8 +772,8 @@ h3 {
   height: 90px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  fill: var(--border-logo);
-  border: solid 1px var(--border-logo);
+  fill: #afb1b8;
+  border: solid 1px #afb1b8;
   border-radius: 4px;
   outline: none;
   cursor: -webkit-grab;
@@ -785,8 +785,8 @@ h3 {
 }
 
 .clients__links:hover, .clients__links:focus {
-  fill: var(--btn-blue);
-  border: solid 1px var(--btn-blue);
+  fill: #2196f3;
+  border: solid 1px #2196f3;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -940,7 +940,7 @@ h3 {
 }
 
 .footer {
-  background-color: var(--background);
+  background-color: #2f303a;
 }
 
 .footer__contacts {
@@ -977,15 +977,15 @@ h3 {
   line-height: 1.142;
   letter-spacing: 0.03em;
   margin-bottom: 20px;
-  color: var(--text-white);
+  color: white;
 }
 
 .footer-address .footer-address__link {
-  color: var(--text-white-op06);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-address .footer-address__text {
-  color: var(--text-white);
+  color: white;
 }
 
 .footer-address__mail {
@@ -1020,7 +1020,7 @@ h3 {
           align-items: center;
   width: 44px;
   height: 44px;
-  background-color: var(--bcg-links);
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   outline: none;
   -webkit-transition: bacground-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1028,12 +1028,12 @@ h3 {
 }
 
 .footer__links:focus, .footer__links:hover {
-  background-color: var(--btn-blue);
+  background-color: #2196f3;
 }
 
 .footer__svg {
   display: block;
-  fill: var(--text-white);
+  fill: white;
 }
 
 .footer__links:not(:first-child) {
@@ -1055,7 +1055,7 @@ h3 {
   height: 50px;
   margin-right: 12px;
   background-color: transparent;
-  border: solid 1px var(--border-input-footer);
+  border: solid 1px rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   padding-left: 16px;
   font-style: normal;
@@ -1063,7 +1063,7 @@ h3 {
   font-size: 12px;
   line-height: 1.166;
   letter-spacing: 0.01em;
-  color: var(--text-gray);
+  color: #757575;
 }
 
 .footer__button {
@@ -1080,8 +1080,8 @@ h3 {
   border-radius: 4px;
   width: 200px;
   height: 50px;
-  color: var(--text-white);
-  background-color: var(--btn-blue);
+  color: white;
+  background-color: #2196f3;
   border: none;
   font-size: 16px;
   font-weight: 700;

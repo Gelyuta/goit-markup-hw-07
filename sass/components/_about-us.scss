@@ -4,20 +4,20 @@
   margin-bottom: 30px;
   width: 270px;
   height: 120px;
-  background-color: var(--section-bcg);      
+  background-color: $section-bcg;      
 }
     
 .section-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: calc(-1 * 30px);
+  margin-left: calc(-1 * #{$value-margin});
     
   padding-top: 94px;
 }
     
 .section-list__item {
-  flex-basis: calc(100% / 4 - 30px);
-  margin-left: var(--value-margin);
+  flex-basis: calc(100% / 4 - #{$value-margin});
+  margin-left: $value-margin;
   display: inline-block;
 }
 
@@ -26,17 +26,17 @@
 .card-set {
   display: flex;
   flex-wrap: wrap;
-  margin-left: calc(-1 * 30px);
+  margin-left: calc(-1 * #{$value-margin});
   padding-bottom: 94px;
 }
     
 .card-set__img {
-  flex-basis: calc(100% / 3 - 30px);
+  flex-basis: calc(100% / 3 - #{$value-margin});
   margin-left: 30px;
 }
     
 .section-title {
-  color: var(--text-black);
+  color: $text-black;
   margin-top: 0;
   margin-bottom: 50px;
   padding-top: 94px; 
@@ -48,7 +48,7 @@
 }
     
 .section-list__subtitle  {
-  color: var(--text-dark-gray);
+  color: $text-dark-gray;
   margin-bottom: 10px;
   font-weight: bold;
   font-size: 14px;
@@ -57,7 +57,7 @@
 }
   
 .section-list__description {
-  color: var(--text-gray);
+  color: $text-gray;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -69,12 +69,12 @@
 .card-set__title {
   margin: 0;
   text-align: center;
-  color: var(--text-white);
+  color: $text-white;
   padding-top: 27px;
   padding-bottom: 27px;
   position: absolute;
   bottom: 0;
-  background-color: var(--bcg-cards);
+  background-color: $bcg-cards;
   width: 100%;
 }
     

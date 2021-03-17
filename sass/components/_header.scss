@@ -1,5 +1,5 @@
 .header__line {
-  border-bottom: 1px solid var(--border-line);
+  border-bottom: 1px solid $border-line;
 }
 
 .nav {
@@ -11,7 +11,7 @@
   padding-top: 32px;
   padding-bottom: 32px;
   
-  color: var(--text-dark-gray);
+  color: $text-dark-gray;
   font-weight: 500;
     
   font-size: 14px;
@@ -23,7 +23,7 @@
     
   &:hover,
   &:focus, {
-    color: var(--text-blue);
+    color: $text-blue;
     outline: none;
   }
 }
@@ -43,7 +43,7 @@
   display: block;
   width: 100%;
   height: 4px;
-  background-color: var(--btn-blue);
+  background-color: $btn-blue;
   border-radius: 2px;
   
   position: absolute;
@@ -72,15 +72,15 @@
 
 .logo__label{
   &--blue {
-    color: var(--text-blue);
+    color: $text-blue;
   }
   
   &--white {
-    color: var(--text-white);
+    color: $text-white;
   }
   
   &--black {
-    color: var(--text-black);
+    color: $text-black;
   }
 }
   
@@ -98,7 +98,7 @@
 .auth-nav__svg {
   display: flex;
   align-items: center;
-  color: var(--text-gray);
+  color: $text-gray;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -118,7 +118,7 @@
 
   &--first:hover,
   &:focus, {
-    color: var(--text-blue);
+    color: $text-blue;
     outline: none;
   }
 
@@ -138,7 +138,7 @@
 
   &:hover,
   &:focus,{
-    color: var(--text-blue);
+    color: $text-blue;
     outline: none;
   }
 }

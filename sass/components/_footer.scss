@@ -1,5 +1,5 @@
 .footer {
-  background-color: var(--background);
+  background-color: $background;
 }
     
 .footer__contacts {
@@ -27,15 +27,15 @@
   line-height: 1.142;
   letter-spacing: 0.03em;
   margin-bottom: 20px;
-  color: var(--text-white);
+  color: $text-white;
 }
     
 .footer-address .footer-address__link {
-  color: var(--text-white-op06);
+  color: $text-white-op06;
 }
     
 .footer-address .footer-address__text {
-  color: var(--text-white);
+  color: $text-white;
 }
     
 .footer-address__mail {
@@ -60,7 +60,7 @@
   align-items: center;
   width: 44px;
   height: 44px;
-  background-color: var(--bcg-links);
+  background-color: $bcg-links;
   border-radius: 50%;
   outline: none;
     
@@ -68,13 +68,13 @@
   
   &:focus,
   &:hover {
-    background-color: var(--btn-blue);
+    background-color: $btn-blue;
   }
 }
   
 .footer__svg {
   display: block;
-  fill: var(--text-white);
+  fill: $text-white;
 }
     
 .footer__links:not(:first-child) {
@@ -94,7 +94,7 @@
   height: 50px;
   margin-right: 12px;
   background-color: transparent;
-  border: solid 1px var( --border-input-footer);
+  border: solid 1px $border-input-footer;
   border-radius: 4px;
   padding-left: 16px;
     
@@ -103,7 +103,7 @@
   font-size: 12px;
   line-height: 1.166;
   letter-spacing: 0.01em;
-  color: var(--text-gray);
+  color: $text-gray;
       
 }
     
@@ -118,8 +118,8 @@
      
   width: 200px;
   height: 50px;
-  color: var(--text-white);
-  background-color: var(--btn-blue);
+  color: $text-white;
+  background-color: $4btn-blue;
   border: none;
   font-size: 16px;
   font-weight: 700;
