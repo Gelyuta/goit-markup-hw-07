@@ -634,11 +634,11 @@ h3 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding-bottom: 94px;
-  margin-left: calc(-1 * var(--indent-card));
+  margin-left: calc(-1 * 30px);
 }
 
 .section-team__bcg {
-  background-color: var(--section-bcg);
+  background-color: #f5f4fa;
 }
 
 .section-team__img-thumb {
@@ -652,7 +652,7 @@ h3 {
 }
 
 .section-team_member {
-  color: var(--text-black);
+  color: black;
   margin-top: 0;
   margin-bottom: 10px;
   font-weight: 500;
@@ -663,7 +663,7 @@ h3 {
 
 .section-team_profession {
   display: block;
-  color: var(--text-gray);
+  color: #757575;
   margin-top: 0;
   margin-bottom: 16px;
   font-weight: normal;
@@ -673,12 +673,12 @@ h3 {
 }
 
 .section-team__card {
-  -ms-flex-preferred-size: calc(100% / 4 - var(--indent-card));
-      flex-basis: calc(100% / 4 - var(--indent-card));
-  margin-left: var(--indent-card);
+  -ms-flex-preferred-size: calc(100% / 4 - 30px);
+      flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  background: var(--bcg-white);
+  background: white;
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -709,15 +709,15 @@ h3 {
           align-items: center;
   width: 44px;
   height: 44px;
-  color: var(--border-logo);
+  color: #afb1b8;
   outline: none;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-networks__contacts:hover, .social-networks__contacts:focus {
-  background-color: var(--btn-blue);
-  color: var(--text-white);
+  background-color: #2196f3;
+  color: white;
   border-radius: 50%;
 }
 
@@ -726,7 +726,7 @@ h3 {
 }
 
 .social-networks__icon:hover, .social-networks__icon:focus {
-  fill: var(--text-white);
+  fill: white;
 }
 
 .section-title__clients {

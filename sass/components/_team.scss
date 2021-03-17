@@ -4,11 +4,13 @@
   flex-wrap: wrap;
   padding-bottom: 94px;
     
-  margin-left: calc(-1 * var(--indent-card));
+  margin-left: calc(-1 * #{$indent-card});
 }
 
 .section-team__bcg {
-  background-color: var(--section-bcg);}
+  background-color: $section-bcg;
+}
+
     
 
 .section-team__img-thumb {
@@ -22,7 +24,7 @@
 }
 
 .section-team_member {
-  color: var(--text-black);
+  color: $text-black;
   margin-top: 0;
   margin-bottom: 10px;
     
@@ -35,7 +37,7 @@
 .section-team_profession {
   display: block;
   
-  color: var(--text-gray);
+  color: $text-gray;
   margin-top: 0;
   margin-bottom: 16px;
     
@@ -47,11 +49,11 @@
     
     
 .section-team__card {
-  flex-basis: calc(100% / 4 - var(--indent-card));
-  margin-left: var(--indent-card);
+  flex-basis: calc(100% / 4 - #{$indent-card});
+  margin-left: $indent-card;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  background: var(--bcg-white);
+  background: $bcg-white;
     
   border-radius: 0px 0px 4px 4px;
 }
@@ -75,15 +77,15 @@
   align-items: center;
   width: 44px;
   height: 44px;
-  color: var(--border-logo);
+  color: $border-logo;
   outline: none;
       
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
       
   &:hover,
   &:focus {
-    background-color: var(--btn-blue);
-    color: var(--text-white);
+    background-color: $btn-blue;
+    color: $text-white;
     border-radius: 50%;
   }
 }
@@ -93,7 +95,7 @@
 
   &:hover,
   &:focus {
-    fill: var(--text-white);
+    fill: $text-white;
   } 
 
 }
