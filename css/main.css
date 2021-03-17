@@ -271,34 +271,6 @@ Interactive
 /*
 Add the correct display in Chrome and Safari.
 */
-:root {
-  --text-blue: rgba(33, 150, 243, 1);
-  --text-black: rgba(0, 0, 0, 1);
-  --text-dark-gray: rgba(33, 33, 33, 1);
-  --text-gray: rgba(117, 117, 117, 1);
-  --text-gray-op05: rgba(117, 117, 117, 0.5);
-  --text-white: rgba(255, 255, 255, 1);
-  --text-white-op06: rgba(255, 255, 255, 0.6);
-  --btn-blue: rgba(33, 150, 243, 1);
-  --btn-white: rgba(245, 244, 250, 1);
-  --background: rgba(47, 48, 58, 1);
-  --section-bcg: rgba(245, 244, 250, 1);
-  --bcg-white: rgba(255, 255, 255, 1);
-  --bcg-links: rgba(255, 255, 255, 0.1);
-  --bcg-cards: rgba(47, 48, 58, 0.8);
-  --bcg-img: rgba(33, 150, 243, 0.9);
-  --overlay: rgba(0, 0, 0, 0.2);
-  --indent-card: 30px;
-  --border-card: rgba(238, 238, 238, 1);
-  --border-line: rgba(236, 236, 236, 1);
-  --value-margin: 30px;
-  --border-logo: rgba(175, 177, 184, 1);
-  --border-modal-close: rgba(0, 0, 0, 0.1);
-  --border-input: rgba(33, 33, 33, 0.2);
-  --border-input-footer: rgba(255, 255, 255, 0.3);
-  --btn-form: rgba(24, 140, 232, 1);
-}
-
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1134,7 +1106,7 @@ h3 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--overlay);
+  background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1149,7 +1121,7 @@ h3 {
 .modal {
   width: 528px;
   height: 581px;
-  background-color: var(--bcg-white);
+  background-color: white;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1175,9 +1147,9 @@ h3 {
   position: absolute;
   top: 8px;
   right: 8px;
-  border: 1px solid var(--border-modal-close);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  background-color: var(--bcg-white);
+  background-color: white;
   cursor: pointer;
 }
 
@@ -1191,7 +1163,7 @@ h3 {
 }
 
 .modal__close:hover {
-  fill: var(--btn-blue);
+  fill: #2196f3;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1234,7 +1206,7 @@ h3 {
 }
 
 .form__field:focus-within {
-  color: var(--btn-blue);
+  color: #2196f3;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1243,13 +1215,13 @@ h3 {
   width: 100%;
   margin: 0;
   padding: 11px 12px 11px 42px;
-  border: 1px solid var(--border-input);
+  border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
 
 .form__input:focus {
   outline: none;
-  border: 1px solid var(--btn-blue);
+  border: 1px solid #2196f3;
   border-radius: 4px;
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1261,7 +1233,7 @@ h3 {
   font-size: 14px;
   line-height: 1.142;
   letter-spacing: 0.01em;
-  color: var(--text-gray-op05);
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .form__input:-ms-input-placeholder {
@@ -1270,7 +1242,7 @@ h3 {
   font-size: 14px;
   line-height: 1.142;
   letter-spacing: 0.01em;
-  color: var(--text-gray-op05);
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .form__input::-ms-input-placeholder {
@@ -1279,7 +1251,7 @@ h3 {
   font-size: 14px;
   line-height: 1.142;
   letter-spacing: 0.01em;
-  color: var(--text-gray-op05);
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .form__input::placeholder {
@@ -1288,11 +1260,11 @@ h3 {
   font-size: 14px;
   line-height: 1.142;
   letter-spacing: 0.01em;
-  color: var(--text-gray-op05);
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .form__input:focus ~ .form__svg {
-  fill: var(--btn-blue);
+  fill: #2196f3;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1304,7 +1276,7 @@ h3 {
   font-size: 12px;
   line-height: 1.167;
   letter-spacing: 0.01em;
-  color: var(--text-gray);
+  color: #757575;
 }
 
 .form__icon {
@@ -1323,7 +1295,7 @@ h3 {
 
 .form__comment {
   padding: 12px 16px;
-  border: 1px solid var(--border-input);
+  border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
   max-height: 120px;
@@ -1332,7 +1304,7 @@ h3 {
 
 .form__comment:focus {
   outline: none;
-  border: 1px solid var(--btn-blue);
+  border: 1px solid #2196f3;
   border-radius: 4px;
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1347,8 +1319,8 @@ h3 {
   margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
-  color: var(--text-white);
-  background-color: var(--btn-blue);
+  color: white;
+  background-color: #2196f3;
   border: none;
   font-size: 16px;
   font-weight: 700;
@@ -1360,7 +1332,7 @@ h3 {
 }
 
 .modal__button:focus {
-  background-color: var(btn-form);
+  background-color: #188ce8;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1403,13 +1375,13 @@ h3 {
 .checkbox__link {
   display: inline-block;
   padding-left: 4px;
-  color: var(--text-blue);
+  color: #2196f3;
   text-decoration: underline;
 }
 
 .checkbox__icon {
   display: inline-block;
-  border: solid 2px var(--text-black);
+  border: solid 2px black;
   border-radius: 2px;
   padding: 0;
   margin: 0;
